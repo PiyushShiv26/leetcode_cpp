@@ -42,8 +42,7 @@ public:
         int n = 0;
         for(int i = 0; i < s.size() - 1; i++){
             n = abs(s[i] - s[i+1]);
-            if(n <= 2) continue;
-            else return false;
+            if(n > 2) return false;
         }
         return true;
     }
