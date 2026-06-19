@@ -33,10 +33,12 @@ public:
     int largestAltitude(vector<int>& gain) {
         int maxalt = 0;
         int curr = 0;
+
         for(int i: gain){
             curr += i;
             maxalt = max(maxalt, curr);
         }
+        
         return maxalt;
     }
 };
